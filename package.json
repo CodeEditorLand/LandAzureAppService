@@ -716,16 +716,16 @@
 		"onFileSystem:azureAppService"
 	],
 	"dependencies": {
-		"dotenv": "^16.4.7",
-		"fast-xml-parser": "^5.0.9",
-		"fs-extra": "^11.3.0",
-		"open": "^10.1.0"
+		"dotenv": "16.4.7",
+		"fast-xml-parser": "5.0.9",
+		"fs-extra": "11.3.0",
+		"open": "10.1.0"
 	},
 	"devDependencies": {
-		"@types/dotenv": "^8.2.3",
-		"@types/fs-extra": "^11.0.4",
-		"@types/node": "^22.13.10",
-		"glob": "^11.0.1"
+		"@types/dotenv": "8.2.3",
+		"@types/fs-extra": "11.0.4",
+		"@types/node": "22.13.14",
+		"glob": "11.0.1"
 	},
 	"extensionDependencies": [
 		"ms-azuretools.vscode-azureresourcegroups"
