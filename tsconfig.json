@@ -1,16 +1,29 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
-		"target": "es6",
-		"outDir": "out",
-		"lib": ["es6"],
-		"sourceMap": true,
-		"rootDir": ".",
-		"strict": true,
 		"baseUrl": "./",
+		"lib": [
+			"es6"
+		],
+		"module": "commonjs",
+		"outDir": "Target",
 		"paths": {
-			"*": ["node_modules/@types/*", "*"]
-		}
+			"*": [
+				"node_modules/@types/*",
+				"*"
+			]
+		},
+		"rootDir": "src",
+		"sourceMap": true,
+		"strict": true,
+		"target": "es6"
 	},
-	"exclude": ["node_modules", ".vscode-test", "gulpfile.ts"]
+	"exclude": [
+		"node_modules",
+		".vscode-test",
+		"gulpfile.ts"
+	],
+	"extends": "@playform/build/tsconfig",
+	"include": [
+		"src"
+	]
 }

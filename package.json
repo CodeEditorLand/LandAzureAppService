@@ -1,7 +1,29 @@
 {
 	"name": "@codeeditorland/azureappservice",
 	"displayName": "Azure App Service",
+	"version": "0.0.1",
+	"private": false,
 	"description": "%appService.description%",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/LandAzureAppService#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/LandAzureAppService/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/LandAzureAppService.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "./main.js",
 	"scripts": {
 		"all": "npm i && npm run lint && npm test",
@@ -9,6 +31,7 @@
 		"cleanReadme": "gulp cleanReadme",
 		"compile": "tsc -watch",
 		"prepare": "husky install",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
 		"webpack": "npm run build && gulp webpack-dev",
 		"webpack-prod": "npm run build && gulp webpack-prod",
 		"webpack-profile": "webpack --profile --json --mode production > webpack-stats.json && echo Use http://webpack.github.io/analyse to analyze the stats"
@@ -722,6 +745,7 @@
 		"open": "10.1.0"
 	},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/dotenv": "8.2.3",
 		"@types/fs-extra": "11.0.4",
 		"@types/node": "22.13.14",
@@ -730,6 +754,9 @@
 	"extensionDependencies": [
 		"ms-azuretools.vscode-azureresourcegroups"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"icon": "resources/WebApp.png",
 	"galleryBanner": {
 		"color": "#3a3d41",
