@@ -745,7 +745,7 @@
 		"open": "10.1.0"
 	},
 	"devDependencies": {
-		"@playform/build": "0.2.2",
+		"@playform/build": "0.2.3",
 		"@types/dotenv": "8.2.3",
 		"@types/fs-extra": "11.0.4",
 		"@types/node": "22.14.0",
